@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vh;
+    background: linear-gradient(#79e4e6,#1bc296);
+}
+
+.search-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #0a1b2d;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.search-bts{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #0a1b2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+}
+.search-box:hover > .search-bts{
+    background: white;
+}
+
+.search-box > .search-txt{
+    padding: 0 6px;
+}
+
+/*----------Parte 8 ----------*/
