@@ -1,0 +1,7 @@
+     horarios de trabalho
+     
+  -segunda: revisao do progresso semanal e definiçao de metas para a semana seguinte
+  -terça: 16:00-18:30
+  -quarta: 15:00-17:00
+  -quimta: Dia livre (devido a indisponibilidade dos participantes)
+  -sexta: 18:00-20:00
