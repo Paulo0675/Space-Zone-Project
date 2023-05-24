@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+.nome{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #23232e;
+    height: 8vh;
+    padding: 16px;
+}
+
+main{
+    background: url(ass/Imagem\ de\ Fundo.jpg);
+    background-size: cover;
+    height: 92vh;
+}
+/*Parte 2*/
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+
+}
+/*parte 3*/
+.mobile-menu{
+    
+    cursor: pointer;
+    transition: 0.3s;
+}
+.mobile-menu:hover{
+    opacity: 0.4;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+}
+/*parte*/
+.plogo{
+    border: white solid;
+    border-radius: 50px;
+    background-color: white;
+    size: 60px;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+}
