@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#79e4a6, #1bc296);
+}
+
+.search-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0a1b2d;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #f0f5f0;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.search-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
