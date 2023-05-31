@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    background-color: lightgray;
+}
+
+header{
+    height: 5rem;
+    background-color: rgb(148, 148, 148);
+}
+
+header > h1{
+    padding: 10px;
+    text-align: center;
+}
+
+#burguer{
+
+    color: black;
+
+
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+#burguer:hover{
+    background-color: white;
+    color: black;
+}
+
+menu{
+    display: none;
+}
+
+menu ul{
+    list-style-type: none;
+}
+
+menu  ul  li  a{
+
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    border-top: 2px solid gray;
+}
