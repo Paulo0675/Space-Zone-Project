@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="hamburguerteste.css">
+    </head>
+    <body>
+        <header>
+            <h1>site show</h1>
+            <span id="burguer" class="material-symbols-outlined" onclick="clickmenu()">menu</span>
+            <menu id="itens">
+                <ul>
+                    <li><a href="a">opçao 1</a></li>
+                    <li><a href="a">opçao 2</a></li>
+                    <li><a href="a">opçao 3</a></li>
+                    <li><a href="a">opçao 4</a></li>
+                    <li><a href="a">opçao 5</a></li>
+                </ul>
+            </menu>
+        </header>
+        <script>
+            function clickmenu(){
+                if (itens.style.display == 'flex'){
+                    itens.style.display = 'none'
+                }
+                else {
+                    itens.style.display = 'flex'
+                }
+            }
+        </script>
+    </body>
+</html>
