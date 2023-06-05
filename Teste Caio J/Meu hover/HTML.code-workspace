@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "../HTML"
+		},
+		{
+			"path": "../teste 7 (caio)"
+		}
+	],
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Attach to Chrome",
+				"port": 9222,
+				"request": "attach",
+				"type": "chrome",
+				"webRoot": "${workspaceFolder}",
+				
+				
+			},
+			{
+				"name": "Attach to Chrome",
+				"port": 9222,
+				"request": "attach",
+				"type": "chrome",
+				"webRoot": "${workspaceFolder}",
+			},
+		
+		],
+	},
+}
