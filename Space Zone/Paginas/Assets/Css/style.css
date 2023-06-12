@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #1e1e30;
+}
+/*------Parte 1(Header)------*/
+
+/*Cabecalho*/
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 98.85vw;
+    height: 15vh;
+    background: #23232e;
+    /*box-shadow: 0px 3px 12px #00000056;*/
+    box-shadow: 0px 3px 12px #464646;
+    position: fixed;
+    z-index: 2;
+}
+
+/*Meu Lateral Icone*/
+.menu-lateral-btn{
+    cursor: pointer;
+    justify-content: left;
+    transition: 0.5s;
+}
+.menu-lateral-btn div{
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    margin: 8px;
+}
+
+/*Nome do site*/
+.nome{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.nome a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.nome a:hover{
+    opacity: 0.7;
+}
+
+/*Links do Header*/
+.nav-cab-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list-1{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item-1{
+    margin: 0 15px;
+}
+.nav-link-1{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.7s;
+}
+.nav-link-1:hover{
+    opacity: 0.7;
+}
+
+/*Botão de entrar*/
+.btn-login  button{
+    border: none;
+    background-color: #0187a7;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    transition: 0.7s;
+}
+.btn-login  button  a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.btn-login button:hover{
+    padding: 15px 20px;
+    box-shadow: 0px 10px 40px -12px #0187a7;
+}
+
+/*------Parte 2(Aside)------*/
+.sidebar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    padding-top: 30px;
+    margin-top: 99px;
+    top: 0;
+    left: 0;
+    background: #23232e;
+    transition: 0.5s;
+    transition-property: left;
+}
+
+.sidebar .imagem{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.sidebar h2{
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.sidebar a{
+    color: white;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+.sidebar a:hover{
+    background: #369dd8;
+}
+.sidebar .icon{
+    padding-right: 10px;
+}
+
+/*Label*/
+label #sidebar-btn{
+    z-index: 1;
+    position: fixed;
+    left: 300px;
+    color: white;
+    font-size: 30px;
+    margin: 5px 0px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property: color;
+}
+label .menu-lateral-btn:hover{
+    color: #0187a7;
+}
+
+/*Configurações do Side bar*/
+#check:checked ~ .sidebar{
+    left: -190px;
+}
+#check:checked ~ .sidebar  a span.txt-link{
+    display: none;
+}
+#check:checked ~ .sidebar h2{
+    display: none;
+}
+#check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+/*Configurações do corpo*/
+#check{
+    display: none;
+}
+
+
+/*------Parte 3(Main-Slides)------*/
+
+/*Main*/
+.main-content{
+    width: 97.75vw;
+    padding: 7.5px;
+}
+
+/*Sldieshow*/
+.slideshow{
+    height: 400px;
+    width: 795px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: 250px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    margin-top: 120px;
+}
+
+.navigation{
+    position: absolute;
+    bottom: 85px;
+    left: 52%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.bar:hover{
+    background: #fff;
+}
+
+.sl{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;  
+}
+.slide{
+    width: 20%;
+    transition: 0.6s;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+.img1{
+    right: 200px;
+}
+
+.slide p{
+    position: absolute;
+    top: 0;
+    left: 450px;
+    padding: 10px 15px;
+}
+
+#slide1:checked ~ .s1{
+margin-left: 0;
+}
+#slide2:checked ~ .s1{
+margin-left: -20%;
+}
+#slide3:checked ~ .s1{
+margin-left: -40%;
+}
+#slide4:checked ~ .s1{
+margin-left: -60%;
+}
+#slide5:checked ~ .s1{
+margin-left: -80%;
+}
+
+/*noticias*/
+.noticias{
+    background-color: white;
+    border-radius: 20px;
+
+    margin-top: 60px;
+    margin-bottom: 30px;
+
+    margin-left: 250px;
+    margin-right: 250px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.488);
+    padding: 10px;
+
+}
+
+.linhanoticias{
+    width: 80%;
+    margin: auto;
+    color: #D4D4D4;
+    background-color: #D4D4D4;
+}
+
+.noticias > h1{
+    background-image: linear-gradient(to right, #23232e, white);
+    color: white;
+    font-weight: bold;
+    font-size: 1.6em;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 5px;
+}
+
+.noticias > h2{
+    font-size: 1.3em;
+    margin: 30px;
+}
+
+.noticias-content-1 > a > img{
+    display: inline-block;
+    width: 300px;
+    height: 180px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.323);
+}
+
+.noticias-content-1 img{
+    transition: 0.5s;
+}
+.noticias-content-1 img:hover{
+    width: 320px;
+    height: 200px;
+}
+
+.noticias-content-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.noticias-content-1 > a > h3{
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #0187a7;
+}
+
+.noticias-content-1 > a > p{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    margin-bottom: 60px;
+}
+
+/*menu de páginas*/
+.paginas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.paginas > a{
+    background-color: #0187a7;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 60px;
+    margin: 6px;
+    padding-right: 15px;
+    padding-left: 15px;
+    transition: 0.5s;
+}
+
+.paginas > a.selecionado{
+    border: 2px solid black;
+    background-color: #065468;
+}
+
+ .paginas > a:hover{
+    background-color: #065468;
+    opacity: 1;
+ }
+
+/*-------Parte 4(Pre-Rodape)------*/
+
+/*Footer*/
+
+/*rodape*/
+.rodape{
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    widows: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-left: 30px;
+}
+
+/*divs-coonfig*/
+.rodape .left-footer, .rodape .footer-center, .rodape .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*left-footer*/
+.rodape .left-footer{
+    width: 30%;
+}
+.rodape .left-footer h3{
+    color: white;
+    font: normal 36px verdana;
+}
+.rodape .left-footer h3 span{
+    color: #369dd8;
+}
+
+/*Footer-links*/
+.rodape .footer-links{
+    color: white;
+    margin: 20px 0px 12px;
+}
+.rodape .footer-links a{
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+/*footer-company-name*/
+.rodape .footer-company-name{
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/*Footer-center*/
+.rodape .footer-center{
+    width: 35%;
+}
+.rodape .footer-center i{
+    background-color: #33383b;
+    color: white;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+
+.rodape .footer-center p{
+    display: inline-block;
+    color: white;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.rodape .footer-center p span{
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+.rodape .footer-center p a{
+    color: #369dd8;
+    text-decoration: none;
+}
+
+/*Footer-right*/
+.footer-right{
+    width: 30%;
+}
+
+.rodape .footer-company-about{
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.rodape .footer-company-about span{
+    display: block;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/*footer-icons*/
+.rodape .footer-icons{
+    margin-top: 25px;
+}
+
+.rodape .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.rodape .footer-icons a:hover{
+    background-color: #3f71ea;
+}
+
+.footer-links a:hover{
+    color: #3f71ea;
+}
+
+@media (max-width:800px){
+    .rodape .footer-links, .rodape .footer-center, .rodape .footer-right, .rodape .left-footer{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .rodape .footer-center i{
+        margin-left: 0;
+    }
+
+
+}
