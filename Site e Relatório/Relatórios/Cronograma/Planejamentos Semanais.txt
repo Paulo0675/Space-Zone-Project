@@ -1,0 +1,42 @@
+Primeira Semana(Antes do dia 16/05):
+-Busca Da identidade visual para o site;
+-Testes para um carrossel(slideshow);
+-Primeiro modelo e esboço do site via Photoshop;
+
+
+
+Semana 1 (17/05 até 21/05):
+-Fazer a header da primeira versão do site;
+-Fazer os testes com essa primeira versão;
+-Estudar mais sobre Css e HTML(ver o limite dos dois sem usar JavaScript);
+-E mais idealização sobre o conteúdo do site;
+
+
+
+Semana 2(22/05 até 29/05):
+-Aplicar o menu Hamburger(Torná-lo útil);
+-Fazer os links reservas do Header(Torná Los dentro do projeto e úteis);
+-Fazer as abas específicas do Header(Torná-los úteis);
+-Criar uma barra de pesquisa;
+-Obs:Ver se com a imagem o nome space zone fica melhor;
+-Hora Extra:Aprender a ter um background de fundo do conteúdo;
+
+
+
+Semana 3(29/05 até 05/06):
+-Desenvolvimento do landing page
+-Implementação do menu hamburger
+-Implementação do conteúdo do site
+-Criação da página de pesquisa
+-Criação dos Links do menu interativo(Nos links do header)
+-Aplicação do Footer (menus flutuantes)
+EXTRA:
+FAZER UMA BARRA DE PESQUISA FUNCIONAL
+
+
+
+Semana 4(05/06 até 12/06):
+-Implementação Geral de todos os testes e ferramentas;
+-Correção de problemas de implementação e de adaptações;
+-Criação da versão 1.5;
+-Finalização do Projeto(13/06);
