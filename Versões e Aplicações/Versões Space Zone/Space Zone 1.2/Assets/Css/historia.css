@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #201b2c;
+
+}
+/*------Parte 1(Header)------*/
+
+/*Header*/
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100vw;
+    height: 15vh;
+    transition: 0.5s;
+}
+
+
+
+/*Meu Lateral Icone*/
+.menu-lateral-btn{
+    cursor: pointer;
+    justify-content: left;
+    transition: 0.5s;
+}
+.menu-lateral-btn div{
+    width: 32px;
+    height: 2px;
+    background-color: #00ff88;
+    margin: 8px;
+    transition: 0.5s;
+}
+
+/*Nome do site*/
+.nome{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.nome a{
+    color: #00ff88;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.nome a:hover{
+    color: white;
+    opacity: 0.7;
+    box-shadow: 0px 10px 40px -12px #00ff88;
+}
+
+/*Links do Header*/
+.nav-cab-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list-1{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item-1{
+    margin: 0 15px;
+}
+.nav-link-1{
+    text-decoration: none;
+    color: #00ff88;
+    font-size: 18px;
+    transition: 0.7s;
+}
+.nav-link-1:hover{
+    color: white;
+    opacity: 0.7;
+}
+
+/*Botão de entrar*/
+.btn-login  button{
+    border: none;
+    background-color: #00ff88;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    transition: 0.7s;
+}
+.btn-login  button  a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.btn-login button:hover{
+    padding: 15px 20px;
+    box-shadow: 0px 10px 40px -12px #0187a7;
+    background-color: #0187a7;
+}
+
+/*------Parte 2(Aside)------*/
+
+/*O espaço do Menu Lateral*/
+.sidebar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    padding-top: 30px;
+    margin-top: 70px;
+    top: 0;
+    left: 0;
+    background: #201b2c;
+    transition: 0.5s;
+    transition-property: left;
+}
+
+
+/*Imagem lateral*/
+.sidebar .imagem{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+.sidebar h2{
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.sidebar a{
+    color: white;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+.sidebar a:hover{
+    background: #00ff88;
+}
+.sidebar .icon{
+    padding-right: 10px;
+}
+
+/*Label*/
+label #sidebar-btn{
+    z-index: 1;
+    position: fixed;
+    left: 300px;
+    color: white;
+    font-size: 30px;
+    margin: 5px 0px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property: color;
+}
+label .menu-lateral-btn:hover{
+    color: #0187a7;
+}
+
+/*Configurações do Side bar*/
+#check:checked ~ .sidebar{
+    left: -190px;
+}
+#check:checked ~ .sidebar  a span.txt-link{
+    display: none;
+}
+#check:checked ~ .sidebar h2{
+    display: none;
+}
+#check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+#check{
+    display: none;
+}
+
+
+/*------Parte 3(Conteúdo)------*/
+.main-content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.left{
+    margin-top: 70px;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.História-da-nasa-nome > h1{
+    display: flex;
+    justify-content: right;
+    color: #77ffc0;
+}
+.left > h2{
+    color: #77ffc0;
+}
+.left-imagem{
+    width: 35vw;
+}
+
+/*right*/
+.right{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-hist{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.card-hist h1{
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+.card-hist a{
+    text-decoration: none;
+    color: #77ffc0;
+    text-transform: uppercase;
+}
+
+.card-hist p{
+    color: wheat;
+    letter-spacing: 2px;
+    font-size: 14pt;
+}
+
+.btn-saiba{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+.btn-saiba a{
+    color: #2b134b;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+}
