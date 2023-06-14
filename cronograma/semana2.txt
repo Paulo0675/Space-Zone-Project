@@ -1,9 +1,0 @@
-    Objetivos
--Desenvolvimento do landing page
--Implementação do menu hamburger
--Implementação do conteúdo do site
--Criação da página de pesquisa
--Criação dos Links do menu interativo(Nos links do header)
--Aplicação do Footer (menus flutuantes)
-EXTRA:
-FAZER UMA BARRA DE PESQUISA FUNCIONAL

@@ -1,6 +1,0 @@
-      Objetivos 
--aplicar menu hamburguer
--fazer os links reservas do header
--fazer as abas especificas do header
--criar barra de pesquisa 
--testar as imagens para a logo
