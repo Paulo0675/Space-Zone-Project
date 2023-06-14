@@ -1,0 +1,183 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*----------Parte 1 ----------*/
+header {
+    background-color: #23232e;
+    box-shadow: 0px 3px 10px #464646
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+/*----------Parte 2 ----------*/
+.nome{
+    display: flex;
+    align-items: center;
+    margin-right: 200px;
+}
+.nome a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+/*----------Parte 3 ----------*/
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-item{
+    margin: 0 15px;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+/*----------Parte 4 ----------*/
+.nav-button button{
+    border: none;
+    background-color: #0187a7;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+.nav-button button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+/*----------Parte 5 ----------*/
+.mb1{
+    cursor: pointer;
+    justify-content: left;
+    margin-top: 10px;
+}
+.mb1 div{
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    margin: 8px;
+}
+
+/*----------Parte 6 ----------*/
+.mobile-menu-icon{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+@media screen and (max-width: 720px){
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .nav-button{
+        display: none;
+    }
+    .mb1{
+        display: none;
+    }
+    .search-box{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .nav-button{
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .nav-button button{
+        width: 100%;
+    }
+    .open{
+        display: block;
+    }
+}
+
+/*----------Parte 7 ----------*/
+.search-box{
+    background: #020c16;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.search-bts{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #0a1b2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+}
+.search-box:hover > .search-bts{
+    background: white;
+}
+
+.search-box > .search-txt{
+    padding: 0 6px;
+}
+
+/*----------Parte 8 ----------*/
+a{
+    text-decoration: none;
+    color: white;
+    transition: 0.7s;
+}
+a:hover{
+    opacity: 0.6;
+}
+main{
+    background: url(Imagem\ de\ Fundo.jpg);
+    background-size: cover;
+    height: 100vh;
+}
